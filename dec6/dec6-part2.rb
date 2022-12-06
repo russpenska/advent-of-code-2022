@@ -2,9 +2,7 @@ require 'set'
 buffer = File.read("buffer.txt").split("")
 
 # find the first occurence of 4 unique characters in a row
-i = 13
-
-while i < buffer.length do
+for i in (13..buffer.length) do
     # if all chars are unique our Set will have 14 items
     if Set.new(buffer.slice(i - 13, 14)).length == 14 then
         puts "First occurence of 14 unique characters is '#{buffer.slice(i - 13, 14).join("")}' at index #{i}. Characters processed: #{i+1}."
