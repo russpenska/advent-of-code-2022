@@ -2,6 +2,8 @@ require 'set'
 text = File.read("buffer.txt")
 
 matches = Array.new
+
+# generate all combinations of 4 letter "words"
 for a in (97..122) do
     for b in (97..122) do
         for c in (97..122) do
