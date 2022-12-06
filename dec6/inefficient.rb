@@ -26,4 +26,4 @@ for a in (97..122) do
 end
 
 firstResult = matches.sort_by { |a| a[0] }.first
-puts "First unique set of 4 characters are #{firstResult[1]} at #{firstResult[0]}. Answer is #{firstResult[0] + 4}."
+puts "First unique set of 4 characters is #{firstResult[1]} at #{firstResult[0]}. Answer is #{firstResult[0] + 4}."
